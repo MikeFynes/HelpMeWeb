@@ -1,0 +1,202 @@
+/* CSS CREATED FOR HelpMeWeb Project 
+
+Author: Michael Fynes
+University: Metropolia UAS
+Project: HelpMeWeb
+Course: Mobile Programming
+
+*/
+
+/* SETS DEFAULT LAYOUT FEATURES    */
+body{
+background:url(images/bluebiit_logo_large.jpg) no-repeat;
+background-position: center;
+}
+
+.main{
+padding: 25px;
+}
+
+h1{
+ text-align: center;
+     border: 2px solid;
+     border-radius: 11px;
+	    box-shadow: 10px 10px 5px #888888;
+
+	background-color:#99cc00;	
+
+}
+
+h2{
+ text-align: center;
+     border: 2px solid;
+     border-radius: 11px;
+	    box-shadow: 10px 10px 5px #888888;
+
+	background-color:#99cc00;	
+
+}
+
+p{
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+}
+/* DRAGGABLE INTERACTIVE ELEMENT FOR ICONS TAB   */
+ #draggable {
+ width: 100px;
+ height: 100px;
+ padding: 0.5em;
+ float: left;
+ margin: 10px 10px 10px 0;
+      border: 2px solid;
+     border-radius: 11px;
+	 	background-color:#0099cc;	
+		background:url(images/bluebiit_logo_small.png) no-repeat;
+		background-position: center;
+ }
+ #droppable {
+ width: 50%; 
+ height: 200px;
+ padding: 0.5em;
+ float: right;
+ margin: 10px; 
+      border: 2px solid;
+     border-radius: 11px;
+	 	background-color:#99cc00;	
+ 
+ }
+
+/* SETS UP LISTS TO SCALE NICELY FOR BIG SCREENS  */
+
+#left_div{
+float: left;
+
+width:49%;
+}
+#right_div{
+float:right;
+
+	width:49%;
+}
+
+
+.nav_button{
+    border: 2px solid;
+    border-radius: 11px;
+	    box-shadow: 10px 10px 5px #888888;
+	background-color: #99cc00;	
+	margin-top:10px;
+	
+}
+
+.nav_button:active{
+background-color: #0099cc;
+}
+
+.nav_title{
+text-align:center;
+
+}
+
+
+.content{
+
+    width: 50%;
+    margin: 0 auto;
+	
+	
+	
+}
+
+
+/* CONTENT IS INITIALLY HIDDEN BUT IS SHOWN USING JQUERY  */
+#content_video{
+display:none;
+
+}
+#content_text{
+display:none;
+
+}
+
+
+
+
+#video{
+    width: 100%;
+    margin: 5% auto;
+}
+
+
+/* SCALING FOR MEDIUM SIZED SCREENS (TABLETS / SMALL MONITORS)  */
+@media screen and (max-width:800px)
+{
+
+body{
+background:url(images/bluebiit_logo_med.jpg) no-repeat;
+background-position: center;
+}
+.content{
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.large_images{
+width: 100%;
+}
+
+
+/* FLOAT REMOVED TO PUT ALL DIVS ONE AFTER
+ EACH OTHER SO WIDTH IS NOT REQUIRED  */
+#left_div{
+float: none;
+width: 100%;
+
+}
+#right_div{
+width: 100%;
+
+float: none;
+}
+
+
+
+}
+
+
+/* SCALING FOR SMALL SIZED SCREENS (PHONES / SMALL TABLETS)  */
+@media screen and (max-width:999px)
+{
+body{
+background:url(images/bluebiit_logo_small.png) no-repeat;
+width: 80%;
+background-position: center;
+}
+.content{
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.large_images{
+width: 100%;
+}
+
+#left_div{
+float: none;
+width: 100%;
+
+}
+#right_div{
+width: 100%;
+
+float: none;
+}
+
+}
+
+
+
+
